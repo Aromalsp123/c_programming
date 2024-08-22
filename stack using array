@@ -1,0 +1,30 @@
+class Stack {
+  constructor() {
+    this.array = [];
+  }
+
+  // Add an element to the top of the stack
+  push(element) {
+    this.array.push(element);
+  }
+
+  // Remove the top element from the stack
+  pop() {
+    return this.array.pop();
+  }
+
+  // Return the top element without removing it
+  peek() {
+    return this.array[this.array.length - 1];
+  }
+
+  // Check if the stack is empty
+  isEmpty() {
+    return this.array.length === 0;
+  }
+
+  // Return the size of the stack
+  size() {
+    return this.array.length;
+  }
+}
